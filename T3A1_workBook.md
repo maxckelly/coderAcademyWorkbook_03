@@ -16,6 +16,8 @@
 
 ## Q3: Outline a standard high level structure for a MERN stack application and explain the components
 
+  - MERN stack is a combination of technologies which are then used to create web applications MERN is a Javascript stack that is designed to make the development process smoother, it includes four open-source components: MongoDB, Express, React and Node.js. MongoDB is a NoSQL document-oriented database. MongoDB is known for being flexible and easy to scale.
+
 ## Q4: A team is about to engage in a project, developing a website for a small business. What knowledge and skills would they need in order to develop the project?
 
 - The
