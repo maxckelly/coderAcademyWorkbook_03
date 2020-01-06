@@ -2,7 +2,7 @@
 
 ## Q1: Provide an overview and description of a standard source control process for a large project
 
-- A standard source control process of a large project would be Git. Some platforms that help make the management of versions with Git easier as well as ensuring that quality of the code is up to the company standards is Github and BitBucket. A typical process for a large project would be to a Git process where a number of developers can have the most up-to-date code and ensure that the quality of it is up to standard. Git helps you do this by pushing and pulling code as well as giving the option for another developer to review and approve code before it has been merged with the master branch.
+  - A standard source control process of a large project would be Git. Some platforms that help make the management of versions with Git easier as well as ensuring that quality of the code is up to the company standards is Github and BitBucket. A typical process for a large project would be to a Git process where a number of developers can have the most up-to-date code and ensure that the quality of it is up to standard. Git helps you do this by pushing and pulling code as well as giving the option for another developer to review and approve code before it has been merged with the master branch.
 
 ## Q2: What are the most important aspects of quality software?
 
@@ -16,17 +16,60 @@
 
 ## Q3: Outline a standard high level structure for a MERN stack application and explain the components
 
-  - MERN stack is a combination of technologies which are then used to create web applications MERN is a Javascript stack that is designed to make the development process smoother, it includes four open-source components: MongoDB, Express, React and Node.js. MongoDB is a NoSQL document-oriented database. MongoDB is known for being flexible and easy to scale.
+  - MERN stack is a combination of technologies which are then used to create web applications MERN is a Javascript stack that is designed to make the development process smoother, it includes four open-source components: MongoDB, Express, React and Node.js. 
+  
+  MongoDB is a NoSQL document-oriented database. MongoDB is known for being flexible and easy to scale. While many databases have a typical schema design based on columns and tables, MongoDB does not. Data is stored in flexible documents with making it quick and easy to get set up. 
+  
+  Express is a back-end web application framework. Instead of writing full web server code by hand on Node.js, developers can instead use Express to simplify the task of writing server code saving time and improving code. 
+
+  React is a JavaScript library for the front-end of the website. React can be used  for creating views rendered in HTML. This means that developers don't have to worry about managing the effects of changes in the views state. With React the same code can run on both the server and the browser. 
+
+  Node.js is a cross-platform JavaScript runtime environment. It's designed to build scalable applications as well as execute JavaScript code outside of the browser. Node.js is able to use its own module system which is based on CommonJS. 
 
 ## Q4: A team is about to engage in a project, developing a website for a small business. What knowledge and skills would they need in order to develop the project?
 
-- The
+  - Depending on what website the team would be developing they would generally need to have the knowledge of a back-end, database and front-end language. A front-end is the client-side of the site. It is what the client will interact with. This team would need to have the knowledge of the languages such as JavaScript/React or Ruby as well HTML and CSS. The back-end refers to the server-side of the website, this is the part of the site which the clients cannot see or interact with but is extremely important. This team would need to have the knowledge of the back-end language such as Node.js or Ruby on Rails. The back-end also communicates with the database, in this case the team would want to pick a free and easy to use database such as PostgreSQL. Picking this database would allow them to set the small business up in a reasonable time and be of no cost to the business while it remains a small. 
 
 ## Q5: With reference to one of your own projects, discuss what knowledge or skills were required to complete your project, and to overcome challenges
+
+
 
 ## Q6: With reference to one of your own projects, evaluate how effective your knowledge and skills were for this project, and suggest changes or improvements for future projects of a similar nature
 
 ## Q7: Explain control flow, using an example from the JavaScript programming language
+
+  - Control flow is the oder in which the code executes statements in a script. With JavaScript the code is run in order from the first line in the file to the last line in the file. However the control flow can have exceptions when there are conditionals and loops within the code. 
+
+  - An example of a traditional control flow within JavaScript is the below. As you can see this it runs in an order from top down.
+
+  ```
+  console.log("This is the start of the code")
+
+  let name = "Max Kelly" 
+
+  console.log(name)
+
+  console.log("This is the end of the code)
+  ```
+
+  - An example of using a loop within the code makes it so it can re run a particular condition continually until it equals that condition or it breaks. 
+
+  ```
+  console.log("This is the start of the code")
+
+  let name = "Max Kelly" 
+
+  let count = 10
+
+  while (count > 0) {
+    console.log("Hello");
+    count -= 1
+  };
+
+  console.log(name)
+
+  console.log("This is the end of the code)
+  ```
 
 ## Q8: Explain type coercion, using examples from the JavaScript programming language
 
