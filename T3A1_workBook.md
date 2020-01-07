@@ -33,7 +33,6 @@
 ## Q5: With reference to one of your own projects, discuss what knowledge or skills were required to complete your project, and to overcome challenges
 
 
-
 ## Q6: With reference to one of your own projects, evaluate how effective your knowledge and skills were for this project, and suggest changes or improvements for future projects of a similar nature
 
 ## Q7: Explain control flow, using an example from the JavaScript programming language
@@ -83,7 +82,30 @@
 
 ## Q9: Explain data types, using examples from the JavaScript programming language
 
+  - Usually in JavaScript a datatype is assigned to a variable which can store any of the 7 datatypes within JavScript. The 6 types are:
+
+  1. The first datatype is number - This can be a integer which is a whole number such as `17`, `8` etc... or a floating number such as `12.45` or `1.99`. However with JavaScript a number cannot represent integer values larger than 2^53 or less than -2^53.
+  2. Due to the above limitations on numbers a BigInt is another datatype within JavaScript this is usually about a 16 decimal digit and contains an `n` on the end e.g. `1234567895177653456789012345678901234567890n`
+  3. The third datatype is a String. A String is surrounded by quotes this can be either double `""`, single `' '` or `back-ticks`. An example of a string is `let string = "hello"`
+  4. The fourth datatype is a boolean this has two values and is either `true` or `false`. An example of this is `let boolean = true`.
+  5. The fifth datatype is the `null` value. This is a specific value that references an non-existing object.
+  6. Finally the sixth datatype is the `undefined` value. This datatype means that a value is not assigned and there for undefined. 
+
 ## Q10: Explain how arrays can be manipulated in JavaScript, using examples from the JavaScript programming language
+
+  - Arrays in JavaScript is a single variable that is used to store different and multiple elements. They can be manipulated in JavaScript a number of ways some of these ways can be seen below.
+
+  - To create an array you do: `let arrayOne = ["a", "b", "c", "d"]`
+
+  - Removing Elements:
+    - To remove an element from the array you can use `pop()` just like: `arrayOne.pop()`
+    - To remove the first element from the array you can use `shift()` just like: `arrayOne.shift()`
+    - To remove specific indexes within the array you can use `splice()` just like: `arrayOne.splice(0, 2)`
+  
+  - Adding Elements:
+    - To add an element to then end of the array you can use `push()` just like: `arrayOne.push('j')`
+    - You can add it at the beginning of the array using `unshift()` just like: `arrayOne.unshift('l')`
+
 
 ## Q11: Explain how objects can be manipulated in JavaScript, using examples from the JavaScript programming language
 
@@ -131,3 +153,4 @@ for (model of models) {
 #### Reference:
 
 - https://www.silasreinagel.com/blog/2016/11/15/the-seven-aspects-of-software-quality/
+- https://javascript.info/types
