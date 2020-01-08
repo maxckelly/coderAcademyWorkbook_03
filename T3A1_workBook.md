@@ -32,7 +32,10 @@
 
 ## Q5: With reference to one of your own projects, discuss what knowledge or skills were required to complete your project, and to overcome challenges
 
+  - The project that I have recently worked on was Ruby on Rails marketplace app. My app was called `Sitter` and involved a two sided marketplace 1. For the parent looking for a baby sitter and 2. The sitter looking for work. The tech stack involved in building this platform was HTML, CSS, Ruby, Ruby on Rails, Heroku, Bootstrap and PostgreSQL The knowledge I needed in order to build this platform out was the terminology of databases and the syntax knowledge in order to create it. Along with this I need an understanding of my audience and why I was building the platform. Such as the 
 
+  The skills that were required to complete the Sitter app was firstly Ruby, this involved the knowledge of using if statements, manipulating over objects/arrays and handling forms/data. Along with Ruby I also had to have the skill of Rails, this involved routing, controllers, views and more. Rails allowed me to create a functional and working application very quickly, however I had to have the correct knowledge/skill of how to further build out the app. The third skill that I needed to have in order to build my application was PostgreSQL - PostgreSQL is a schema database in order to correctly build this out I need to plan out and build the design of the schema and from there 
+  Some skills I needed to create the application was time management, design and 
 ## Q6: With reference to one of your own projects, evaluate how effective your knowledge and skills were for this project, and suggest changes or improvements for future projects of a similar nature
 
 ## Q7: Explain control flow, using an example from the JavaScript programming language
@@ -106,8 +109,60 @@
     - To add an element to then end of the array you can use `push()` just like: `arrayOne.push('j')`
     - You can add it at the beginning of the array using `unshift()` just like: `arrayOne.unshift('l')`
 
+  - You can also iterate through the array a number of ways. For example using `.map()` this can be done by doing the below.
+
+    ```
+    let arrayTwo = ['M', 'A', 'X']
+
+    let letters = arrayTwo.map((letter) => {
+      return console.log(letter)
+    }); 
+    ```
+    
 
 ## Q11: Explain how objects can be manipulated in JavaScript, using examples from the JavaScript programming language
+
+  - An object in JavaScript is a variable that holds a group of comma separated key value pairs which is also called a hash. There are two JavaScript objects 1. Object literal this is just a single object and 2. constructor objects, this involves the use of a function and the key word `this`.  Objects can contain both data and functions. As seen below you can see how to create an object as well as manipulate it. 
+
+  - Example of an object literal.
+
+  ```
+  const person = {
+    name: "Max Kelly",
+    age: 21,
+    height: 187.9,
+    alive: true
+  }
+  ```
+  - Example of a constructor object. A constructor object allows us to easily make multiply objects
+
+  ```
+  function Person(name, age, height, alive) {
+    this.name = name;
+    this.age = age;
+    this.height = height;
+    this.alive = alive;
+  }
+
+  // To create an object we can do the below:
+
+  let max = new Person("Max", 21, 187.98, true)
+  ```
+
+  - To display the keys in an object (these are `name`, `age` etc...) you can do the below:
+
+  ```
+  console.log(Object.keys(person));
+
+  // This will print out `name`, `age`, `height`, `alive`
+  ```
+
+  - You can change object data by doing the below: You will notice that you call the name of the object that being `person` then you select the key `age` and then you set its new value.
+
+  ```
+  person["age"] = 22
+  console.log(person);
+  ```
 
 ## Q12: Explain how JSON can be manipulated in JavaScript, using examples from the JavaScript programming language
 
@@ -154,3 +209,6 @@ for (model of models) {
 
 - https://www.silasreinagel.com/blog/2016/11/15/the-seven-aspects-of-software-quality/
 - https://javascript.info/types
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+- https://medium.com/@TK_CodeBear/manipulating-objects-in-javascript-59fefeb6a738
+- https://clubmate.fi/javascript-manipulating-objects-with-object-keys/
