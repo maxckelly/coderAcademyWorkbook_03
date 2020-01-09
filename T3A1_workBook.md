@@ -40,6 +40,8 @@
    
 ## Q6: With reference to one of your own projects, evaluate how effective your knowledge and skills were for this project, and suggest changes or improvements for future projects of a similar nature
 
+  - The project which I'm
+
 ## Q7: Explain control flow, using an example from the JavaScript programming language
 
   - Control flow is the oder in which the code executes statements in a script. With JavaScript the code is run in order from the first line in the file to the last line in the file. However the control flow can have exceptions when there are conditionals and loops within the code. 
@@ -168,40 +170,71 @@
 
 ## Q12: Explain how JSON can be manipulated in JavaScript, using examples from the JavaScript programming language
 
-## Q13: For the code snippet provided below, write comments for each line of code to explain its functionality. In your comments you must demonstrates your ability to recognise and identify functions, ranges and classes
+  - JSON short for JavaScript Object Notation is entirely text-based. It is a key value data format that is typically rendered in curly braces. Some ways in which you can manipulate JSON in JavaScript is below:
+
+  1. `JSON.stringify()` - This function converts an object to a JSON string. This can be used like:
+  
+  ``` 
+  var obj = {"first_name" : "Sammy", "last_name" : "Shark", "location" : "Ocean"}
+
+  var s = JSON.stringify(obj)
+  ```
+
+  2. `JSON.parse()` - This function allows you to convert JSON text to a javascript object. 
+
+  ```
+  let people = '{ "people" : [' +
+  '{ "firstName":"Max" , "lastName":"Kelly" },' +
+  '{ "firstName":"Alex" , "lastName":"Smith" },' +
+  '{ "firstName":"Alexis" , "lastName":"Jones" } ]}'; 
+
+  let obj = JSON.parse(people);
+  ```
+
+## Q13: For the code snippet provided below, write comments for each line of code to explain its functionality. In your comments you must demonstrates your ability to recognize and identify functions, ranges and classes
 
 ```
+// The below is a class which acts as a "special function".
 class Car {
+  // A constructor can be used to set the default values of the object. This initializes the method.
   constructor(brand) {
     this.carname = brand;
   }
+
+  // The below is a function within the class that returns the string place the brand of the car. 
   present() {
     return 'I have a ' + this.carname;
   }
 }
 
+// This is a class which extends its 'reach' to the parent class being the Car. It can access it functionality from the parent class
 class Model extends Car {
   constructor(brand, mod) {
+    // The super is being used to call functions on the object.
     super(brand);
     this.model = mod;
   }
+
   show() {
     return this.present() + ', it was made in ' + this.model;
   }
 }
 
+// The below is a variable containing arrays of brand names.
 let makes = ["Ford", "Holden", "Toyota"]
 let models = Array.from(new Array(40), (x,i) => i + 1980)
 
+// The below is a function which sets a number range with a min and max.
 function randomIntFromInterval(min,max) { // min and max included
-    return Math.floor(Math.random()*(max-min+1)+min);
+  return Math.floor(Math.random()*(max-min+1)+min);
 }
 
 for (model of models) {
 
   make = makes[randomIntFromInterval(0,makes.length-1)]
   model = models[randomIntFromInterval(0,makes.length-1)]
-    
+  
+  // The below is calling the class and creating a new object
   mycar = new Model(make, model);
   console.log(mycar.show())
 }
@@ -214,3 +247,5 @@ for (model of models) {
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
 - https://medium.com/@TK_CodeBear/manipulating-objects-in-javascript-59fefeb6a738
 - https://clubmate.fi/javascript-manipulating-objects-with-object-keys/
+- https://www.digitalocean.com/community/tutorials/how-to-work-with-json-in-javascript
+- https://www.w3schools.com/js/js_json.asp
