@@ -14,6 +14,10 @@
 
   4. Portability - This is the ease in which a program can be used across computer configurations other than its original one. This is important because hardware changes constantly and has a much shorter life span then the code that being said its important the code can adapt for the future.
 
+  5. Testability - The process of testing your software must be verifiable. It must be easy and simple to understand and implement the tests. This includes automated tests suits and only pushing the code once the necessary tests have occurred.
+
+  6. Usability - The software must be easy and simple to use for the user. A user should be able to view the software and have a clear indication of what the software can do and the benefit it provides them. Bad usability would result in the user searching for help and understanding of how to use your platform.
+
 ## Q3: Outline a standard high level structure for a MERN stack application and explain the components
 
   - MERN stack is a combination of technologies which are then used to create web applications MERN is a Javascript stack that is designed to make the development process smoother, it includes four open-source components: MongoDB, Express, React and Node.js. 
@@ -40,7 +44,11 @@
    
 ## Q6: With reference to one of your own projects, evaluate how effective your knowledge and skills were for this project, and suggest changes or improvements for future projects of a similar nature
 
-  - The project which I'm
+  - With reference to my Ruby on Rails project I believe coming into my project my skill of coding in Ruby was minimal and especially around PostgreSQL. I was unsure and novice in creating the database and worried that I could greatly damage effect the integrity of my app with the lack of knowledge around commands and how to create and structure the schema. However with experimentation and confidence that I won't effect my application I was able to gain the confidence and knowledge that I can always manage and rollback the database. 
+  
+  Another challenge which I faced was migrations. With my project I used two computers (my laptop and home desktop), through this I noticed that the migrations were out of sync a lot of the time and that greatly effected the application. However I learnt of new commands where you can re run the migration from the start making it so every computer is up to date regardless of how many migrations and changes you make to the database.
+
+  The changes and improvements I would make if I was to re do the project would be to plan out and take my time with my schema design. This limits the need to change it constantly through out the application while in development and reduce the chances of creating unnecessary coding debt. Along with this I think I can improve the testing of the application and automate that area which will be able to save time and allow for more development.
 
 ## Q7: Explain control flow, using an example from the JavaScript programming language
 
@@ -207,7 +215,7 @@ class Car {
   }
 }
 
-// This is a class which extends its 'reach' to the parent class being the Car. It can access it functionality from the parent class
+// This is a class which extends it's 'reach' to the parent class being the Car. It can access it's functionality from the parent class
 class Model extends Car {
   constructor(brand, mod) {
     // The super is being used to call functions on the object.
@@ -215,6 +223,7 @@ class Model extends Car {
     this.model = mod;
   }
 
+  // The below is a function
   show() {
     return this.present() + ', it was made in ' + this.model;
   }
