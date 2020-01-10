@@ -134,7 +134,7 @@
 
 ## Q11: Explain how objects can be manipulated in JavaScript, using examples from the JavaScript programming language
 
-  - An object in JavaScript is a variable that holds a group of comma separated key value pairs which is also called a hash. There are two JavaScript objects 1. Object literal this is just a single object and 2. constructor objects, this involves the use of a function and the key word `this`.  Objects can contain both data and functions. As seen below you can see how to create an object as well as manipulate it. 
+  - An object in JavaScript is a variable that holds a group of comma separated key value pairs which is also called a hash. There are two JavaScript objects 1. Object literal this is just a single object and 2. constructor objects, this involves the use of a function and the key word `this`. Objects can contain both data and functions. As seen below you can see how to create an object as well as manipulate it. 
 
   - Example of an object literal.
 
@@ -237,6 +237,7 @@ let models = Array.from(new Array(40), (x,i) => i + 1980)
 function randomIntFromInterval(min,max) { // min and max included
   return Math.floor(Math.random()*(max-min+1)+min);
 }
+
 
 for (model of models) {
 
